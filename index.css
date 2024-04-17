@@ -26,7 +26,7 @@ header img{
 
 header div{
     display: inline;
-    float:right;
+    float: right;
     margin-top: 60px;
     margin-right: 40px;
 }
@@ -70,6 +70,15 @@ main{
     background-color: chocolate;
 }
 
+main *{
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+}
+
+main h1{
+    font-size: 50px;
+}
 /* footer */
 footer{
     background-color: palegreen;
