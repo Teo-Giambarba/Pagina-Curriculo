@@ -89,40 +89,39 @@ main{
     display: flexbox;
 }
 
-main div {
-    align-self: center;
-    justify-content: center;
-    text-align: center;
-}
-
-main div h1 {
-    padding-top: 10px;
-    font-size: 50px;
-}
-
 main section {
     display: box;
     justify-content: center;
     text-align: center;
 }
 
-main section h2 {
-    display: flexbox;
-    font-size: 30px;
+main section h1 {
+    padding-top: 10px;
+    font-size: 50px;
 }
 
-main section p, main section li {
+main section p {
     font-size: larger;
 }
 
-main section ul{
-    text-align: center;
-    display: inline-block;
+main section img {
+    width: 224px;
 }
 
-main section:last-of-type img {
-    width: 10%;
-    align-self: center;
+main section div:first-of-type img {
+    width: 480px;
+}
+
+main section div:nth-of-type(4) img:first-child {
+    width: 400px;
+}
+
+main section div:nth-of-type(5) img {
+    width: 128px;
+}
+
+main section div:nth-of-type(7) img {
+    width: 320px;
 }
 
 /* footer */
@@ -130,7 +129,7 @@ footer {
     background-image: linear-gradient(white, #535658, black);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 250px;
 }
 
@@ -148,7 +147,7 @@ footer div:not(image-holder) {
 }
 
 footer div a img:first-child {
-    height: 30%;
+    width: 30%;
     padding-right: 15%;
     padding-left: 0%;
 }
